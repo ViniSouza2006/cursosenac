@@ -9,17 +9,16 @@
     <form action="">
         <fieldset>
                 <legend>Indentificação do animal</legend>
-        <labe>Nome:</labe> <Input type="text" id="" placeholder="Digite o Nome completo do dono do animal" ></Input><br>
+        <label>Nome:</label> <Input type="text" id="" placeholder="Digite o Nome completo do dono do animal" ></Input><br>
         <br>
         <label>Endereço:</label> <Input type="text" id="" placeholder="Digite o Endereço" ></Input><br>
         <br>
-        <label>CEP:</label> <Input type="text" id="" placeholder="Digite XXXXX-XXX" ></Input><br>
+        <text>CEP:</text> <Input type="text" id="" placeholder="Digite XXXXX-XXX" ></Input><br>
         <br>
         <label>Email:</label> <Input type="text" id="" placeholder="Digite o Endereço de Email" ></Input><br>
         <br>
         <label>Tel/Cel</label> <Input type="text" id="" placeholder="99 9999-9999" ></Input><br>
         </fieldset>
-        <br>
         <fieldset>Animal
                 <legend>Animal</legend>
         <label>Nome:</label> <Input type="text" id="" placeholder="Digite o nome do animal" ></Input><br>
@@ -33,14 +32,38 @@
         <label for="html">Grande</label><br>
         <br>
         <label>Tipo de tosa:</label>
-            <select name="Tipo de tosa" id="Tipo de tosa"></select>
+            <select name="Tipo de tosa" id="Tipo de tosa">
                 <option value="1">Nenhuma</option>
                 <option value="2">Tosa Padrão</option>
-                <option value="3"></option>
-                <option value="4"></option>
-                <option value="5"></option>
-                <option value="6"></option>
-        </fieldset>
+                <option value="3">Tosa Higiênica</option>
+                <option value="4">Tosa na Tesoura</option>
+                <option value="5">Tosa da Raça</option>
+                <option value="6">Tosa Bebê</option>
+            </select>
+            <br>
+            <Br>
+            <label>Observações:</label> <itextarea icols="15" rows="2"> </textarea> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Horario-(Não atendemos de domingo e segunda-feira)</legend>
+                <br>
+            <label>Indique os dias da semana de sua preferencia:</label>
+            <br>
+            <input type="checkbox" name="Terça-Feira"><label>Terça-Feira</label>
+            <input type="checkbox" name="Quarta-Feira"><label>Quarta-Feira</label>
+            <input type="checkbox" name="Quinta-Feira"><label>Quinta-Feira</label>
+            <input type="checkbox" name="Sexta-Feira"><label>Sexta-Feira</label>
+            <input type="checkbox" name="Sábado-Feira"><label>Sábado-Feira</label><br>
+            <br>
+            
+            <label>Primeira opção de Horario:</label>
+            <input type="date"><br>
+            <br>
+            <label>Segunda opção de Horario:</label>
+            <input type="date">
+            </fieldset>
+            <input type="submit">
 
     </form>
 <body>
